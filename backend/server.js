@@ -14,7 +14,7 @@ app.use(cors(
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://127.0.0.1:27017/todoDB', {
+mongoose.connect('mongodb+srv://py5150954:<db_password>@cluster0.dos143t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("MongoDB connected"))
